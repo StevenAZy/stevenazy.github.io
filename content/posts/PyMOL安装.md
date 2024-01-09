@@ -4,7 +4,7 @@ date = 2023-11-08T23:09:27+08:00
 images = []
 tags = ['安装教程']
 categories = ['技术']
-draft = true
+draft = false
 +++
 
 ### 背景
