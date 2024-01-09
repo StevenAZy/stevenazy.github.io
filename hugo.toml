@@ -1,0 +1,40 @@
+baseURL = "https://niceram.xyz/"    # 博客网址
+languageCode = "zh-CN"              # 网站语言。国际化需要
+title = "StevenBlog"                  # 博客的名字。浏览器 title 上也会显示
+hasCJKLanguage = true               # 统计汉字
+theme = "hugo-kiera"                  # 主题
+
+paginate = 11                       # 每页的文章数
+enableEmoji = true                  # 支持 Emoji
+enableRobotsTXT = true              # 支持 robots.txt
+googleAnalytics = ""                # Google 统计 id
+
+[menu]
+  [[menu.main]]
+    name = "Blog"
+    url = "/posts/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Categories"
+    url = "/categories/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 3
+
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 4
+
+[params]
+    tagline = "Talk is cheap, show me code."
+
+[author]
+    name = "steven"
+    email = 'stevenazy@outlook.com'
+    github = "StevenAZy"
+    twitter = "CLLOVEZ"
