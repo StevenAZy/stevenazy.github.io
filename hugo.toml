@@ -16,6 +16,11 @@ googleAnalytics = ""                # Google 统计 id
     weight = 1
 
   [[menu.main]]
+    name = "Publications"
+    url = "/publications/"
+    weight = 1
+
+  [[menu.main]]
     name = "Categories"
     url = "/categories/"
     weight = 2
