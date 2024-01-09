@@ -1,4 +1,4 @@
-baseURL = "https://niceram.xyz/"    # 博客网址
+baseURL = "https://stevenazy.github.io/"    # 博客网址
 languageCode = "zh-CN"              # 网站语言。国际化需要
 title = "StevenBlog"                  # 博客的名字。浏览器 title 上也会显示
 hasCJKLanguage = true               # 统计汉字
