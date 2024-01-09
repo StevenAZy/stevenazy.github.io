@@ -9,6 +9,8 @@ enableEmoji = true                  # 支持 Emoji
 enableRobotsTXT = true              # 支持 robots.txt
 googleAnalytics = ""                # Google 统计 id
 
+pygmentsUseClasses = true # 使用自定义的代码高亮样式
+
 [menu]
   [[menu.main]]
     name = "Blog"
