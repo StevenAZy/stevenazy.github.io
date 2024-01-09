@@ -18,22 +18,22 @@ googleAnalytics = ""                # Google 统计 id
   [[menu.main]]
     name = "Publications"
     url = "/publications/"
-    weight = 1
+    weight = 2
 
   [[menu.main]]
     name = "Categories"
     url = "/categories/"
-    weight = 2
+    weight = 3
 
   [[menu.main]]
     name = "Tags"
     url = "/tags/"
-    weight = 3
+    weight = 4
 
   [[menu.main]]
     name = "About"
     url = "/about/"
-    weight = 4
+    weight = 5
 
 [params]
     tagline = "Talk is cheap, show me code."

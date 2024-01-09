@@ -14,6 +14,15 @@
    
    
      <item>
+       <title>PyMOL安装</title>
+       <link>https://stevenazy.github.io/posts/pymol/pymol%E5%AE%89%E8%A3%85/</link>
+       <pubDate>Tue, 09 Jan 2024 22:57:05 +0800</pubDate>
+       <author>stevenazy@outlook.com (steven)</author>
+       <guid>https://stevenazy.github.io/posts/pymol/pymol%E5%AE%89%E8%A3%85/</guid>
+       <description>&lt;h3 id=&#34;背景&#34;&gt;背景&lt;/h3&gt;&lt;p&gt;由于作者的研究方向是生物信息学，经常需要对一些生物分子进行操作，需要一个可视化的操作软件，这个软件就是&lt;code&gt;PyMOL&lt;/code&gt;。但是最近在安装PyMOL时出现了不少问题，而且很多问题在网上搜索都是没有办法解决的，所以想写一个教程帮助一下有需要的人。&lt;/p&gt;&lt;h3 id=&#34;介绍&#34;&gt;介绍&lt;/h3&gt;&lt;p&gt;&lt;code&gt;PyMOL&lt;/code&gt;是一个开放源码，由用户赞助的分子三维结构显示软件。&lt;code&gt;PyMOL&lt;/code&gt;适用于创作高质量的小分子或是生物大分子（特别是蛋白质）的三维结构图像。&lt;/p&gt;&lt;h3 id=&#34;安装环境&#34;&gt;安装环境&lt;/h3&gt;&lt;ul&gt;&lt;li&gt;WSL(Windows Subsystem for Linux)&lt;/li&gt;&lt;li&gt;Ubuntu 22.04.3 LTS&lt;/li&gt;&lt;/ul&gt;&lt;h3 id=&#34;安装过程&#34;&gt;安装过程&lt;/h3&gt;&lt;ol&gt;&lt;li&gt;使用&lt;code&gt;Ubuntu&lt;/code&gt; 自带的&lt;code&gt;apt&lt;/code&gt;进行安装。命令是&lt;code&gt;sudo apt install pymol&lt;/code&gt;，安装完成之后，运行&lt;code&gt;pymol&lt;/code&gt;出现下面的问题。&lt;img src=&#34;error.png&#34; alt=&#34;apt安装&#34;&gt;网上寻找了一番，找到了一个&lt;a href=&#34;https://github.com/schrodinger/pymol-open-source/issues/178&#34;&gt;相关解答&lt;/a&gt;，但是按照该解答进行操作，还是没有解决这个问题。&lt;/li&gt;&lt;li&gt;第一种安装方式失败之后，决定使用&lt;code&gt;conda&lt;/code&gt;进行安装。命令是&lt;code&gt;conda install -c conda-forge -c schrodinger pymol-bundle&lt;/code&gt;，安装完成之后，运行出现了新的问题。&lt;img src=&#34;conda.png&#34; alt=&#34;conda安装&#34;&gt;也是搜索一番，找到一个&lt;a href=&#34;https://github.com/schrodinger/pymol-open-source/issues/304&#34;&gt;相关解答&lt;/a&gt;，同样，按照这个解答进行操作，没有解决。&lt;/li&gt;&lt;li&gt;经过上面两种在&lt;code&gt;Ubuntu&lt;/code&gt;上安装软件的方式，作者决定直接从源码安装，做最后的尝试。从源码安装的教程在PyMOL的Wiki上已经给出来了，直接点击该&lt;a href=&#34;https://pymolwiki.org/index.php/Linux_Install&#34;&gt;链接&lt;/a&gt;就可以看到啦！最后放上安装成功的图片。&lt;img src=&#34;success.png&#34; alt=&#34;安装成功&#34;&gt;&lt;/li&gt;&lt;/ol&gt;&lt;h3 id=&#34;总结&#34;&gt;总结&lt;/h3&gt;&lt;p&gt;我之前已经安装过好几次&lt;code&gt;PyMOL&lt;/code&gt;了，在&lt;code&gt;Windows&lt;/code&gt;和&lt;code&gt;MacOS&lt;/code&gt;上都是直接安装成功了。主要还是因为之前的安装都是从官网上直接下载安装包，一键傻瓜式安装。这次的安装遇到的这些问题，其实并没有解决，所以如果有知道解决办法的朋友，可以直接联系我，我也想弄清楚因为什么。&lt;/p&gt;&lt;h3 id=&#34;参考&#34;&gt;参考&lt;/h3&gt;&lt;p&gt;&lt;code&gt;PyMOL&lt;/code&gt;的维基百科：https://zh.wikipedia.org/wiki/PyMOL&lt;code&gt;PyMOL&lt;/code&gt;教程：https://pymolwiki.org/index.php/Main_Page&lt;/p&gt;&lt;p&gt;​&lt;/p&gt;</description>
+     </item>
+   
+     <item>
        <title>2023总结</title>
        <link>https://stevenazy.github.io/posts/2023%E6%80%BB%E7%BB%93/</link>
        <pubDate>Thu, 04 Jan 2024 21:45:42 +0800</pubDate>
