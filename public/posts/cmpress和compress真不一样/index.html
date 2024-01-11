@@ -1,0 +1,225 @@
+<!doctype html>
+
+<html lang="zh-CN">
+
+<head>
+  <title>Cmpress和compress真不一样 - StevenBlog</title>
+  <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="The HTML5 Herald" />
+<meta name="author" content="steven" /><meta property="og:title" content="Cmpress和compress真不一样" />
+<meta property="og:description" content="​ 最近在博主在复现一篇论文​​​​​​​，该论文在处理数据集时用到了一个命令cmpress。当输入这个命令时，终端提醒command not fou" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://stevenazy.github.io/posts/cmpress%E5%92%8Ccompress%E7%9C%9F%E4%B8%8D%E4%B8%80%E6%A0%B7/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-07-12T21:34:45+08:00" />
+<meta property="article:modified_time" content="2023-07-12T21:34:45+08:00" />
+
+
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Cmpress和compress真不一样"/>
+<meta name="twitter:description" content="​ 最近在博主在复现一篇论文​​​​​​​，该论文在处理数据集时用到了一个命令cmpress。当输入这个命令时，终端提醒command not fou"/>
+
+<meta name="generator" content="Hugo 0.121.2">
+    
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://stevenazy.github.io/fontawesome/css/all.min.css" />
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  
+  
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      
+      <h1>
+        <a href="/">StevenBlog</a>
+      </h1>
+
+      <ul id="social-media">
+             <li>
+               <a href="mailto:stevenazy@outlook.com" title="Email me">
+               <i class="fas fa-envelope fa-lg"></i>
+               </a>
+             </li>
+             <li>
+               <a href="https://github.com/StevenAZy" title="GitHub">
+               <i class="fab fa-github fa-lg"></i>
+               </a>
+             </li>
+             <li>
+               <a href="https://twitter.com/CLLOVEZ" title="Twitter">
+               <i class="fab fa-twitter fa-lg"></i>
+               </a>
+             </li>
+      </ul>
+      
+      <p><em>Talk is cheap, show me code.</em></p>
+      
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="/posts/">
+                <i class="fa-li fa  fa-lg"></i><span>Blog</span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="" href="/publications/">
+                <i class="fa-li fa  fa-lg"></i><span>Publications</span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="" href="/categories/">
+                <i class="fa-li fa  fa-lg"></i><span>Categories</span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="" href="/tags/">
+                <i class="fa-li fa  fa-lg"></i><span>Tags</span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="" href="/about/">
+                <i class="fa-li fa  fa-lg"></i><span>About</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+
+    <main>
+
+
+
+
+<article>
+
+    <h1>Cmpress和compress真不一样</h1>
+
+    
+      <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2023-07-12T21:34:45&#43;08:00">Jul 12, 2023</time>
+        </li>
+        
+        
+        <li>
+            Categories:
+            <em>
+                
+                    
+                    <a href="/categories/%E6%8A%80%E6%9C%AF">技术</a>
+                
+            </em>
+        </li>
+        
+
+        
+        <li>
+            <em>
+                
+                    
+                    <a href="/tags/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B">#安装教程</a>
+                
+            </em>
+        </li>
+        
+
+        <li>2 minute read</li>
+    </ul>
+</aside>
+
+    
+
+    
+      
+<div class="featured_image">
+    <a href="https://stevenazy.github.io/posts/cmpress%E5%92%8Ccompress%E7%9C%9F%E4%B8%8D%E4%B8%80%E6%A0%B7/" title="Cmpress和compress真不一样">
+        <img src="">
+    </a>
+</div>
+
+
+    
+
+    <p>​
+最近在博主在复现一篇<a href="https://www.biorxiv.org/content/10.1101/2022.09.09.507333v1">论文</a>​​​​​​​，该论文在处理数据集时用到了一个命令<code>cmpress</code>。当输入这个命令时，终端提醒<code>command not found</code>，于是博主Google了一下，找到的词条都是<code>compress</code>，也许是作者写错了README，应该就是<code>compress</code>，博主还自以为是的在Github上给作者提了个<a href="https://github.com/uw-ipd/RoseTTAFold2NA/issues/44">issue</a>并沾沾自喜。后续在对代码进行调试时发现，<code>cmpress</code>对数据的操作不应该是压缩，而应该是对数据集进行其他的操作。
+经过博主在网上一番冲浪终于找到了<code>cmpress</code>的出处，它来自于一个叫<code>infernal</code>的工具，这个工具主要是用于搜索结构RNA序列同源性的测序数据库，以及实现基于序列或结构的RNA序列比对。<code>infernal</code>包含的命令主要有以下几个<code>cmalign</code>，<code>cmbuild</code>，<code>cmcalibrate</code>，<code>cmconvert</code>，<code>cmemit</code>，<code>cmfetch</code>，<code>cmpress</code>，<code>cmscan</code>，<code>cmsearch</code>，<code>cmstat</code>，具体的用途可以查阅其官方的<a href="http://eddylab.org/infernal/Userguide.pdf">文档</a>。
+既然弄清楚了<code>cmpress</code>怎么来的，接下来就讲一讲如何安装<code>infernal</code>。首先需要到<a href="http://eddylab.org/infernal/">官网</a>去下载最新的<code>infernal</code>压缩包，博主采用的是<code>wget</code>下载。</p>
+<pre tabindex="0"><code># 下载infernal包
+wget http://eddylab.org/infernal/infernal-1.1.4.tar.gz
+# 解压缩
+tar xf infernal-1.1.4.tar.gz
+# 进入infernal包
+cd infernal-1.1.4
+</code></pre><p><img src="/images/download.png" alt="下载截图">
+下载解压完成之后，就可以开始安装了。</p>
+<pre tabindex="0"><code># 配置安装路径
+./configure  --prefix=/home/steven/infernal
+# 安装
+make &amp;&amp; make install
+</code></pre><p><img src="/images/error.png" alt="遇到的错误">
+安装过程中还遇到了一个错误，<code>./configure</code>配置路径是要用绝对路径不可以使用相对路径。
+以上<code>infernal</code>的安装就结束啦！使用时带上路径，例如使用<code>cmpress</code>，直接路径加上命令<code>/home/steven/infernal/bin/cmpress</code>就可以了。
+<img src="/images/success.png" alt="成功截图">
+如果要是嫌这个麻烦的话，可以直接将路径添加到环境变量就可以直接使用对应的命令，不用在加上路径。至于如何添加环境变量，网上的资源已经很多了，自己去搜就可以了。</p>
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        <li>
+        
+            <a href="https://stevenazy.github.io/posts/nvml%E5%88%9D%E5%A7%8B%E5%8C%96%E5%A4%B1%E8%B4%A5/"><i class="fa fa-chevron-circle-left"></i> NVML初始化失败</a>
+        
+        </li>
+        <li>
+        
+            <a href="https://stevenazy.github.io/posts/pymol%E5%AE%89%E8%A3%85/">PyMOL安装 <i class="fa fa-chevron-circle-right"></i> </a>
+        
+        </li>
+    </ul>
+</section>
+  
+    
+    
+  
+
+
+
+
+
+</main>
+    <footer>
+        <ul>
+            <li>
+                <h6>
+                    Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+                    <a href="https://stevenazy.github.io/index.xml">Subscribe </a></h6>
+            </li>
+            
+            
+        </ul>
+    </footer>
+</div>
+<script src="/js/scripts.js"></script>
+
+
+</body>
+
+</html>
+
