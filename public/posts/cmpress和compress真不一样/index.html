@@ -2,27 +2,32 @@
 
 <html lang="zh-CN">
 
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <title>Cmpress和compress真不一样 - StevenBlog</title>
   <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="description" content="The HTML5 Herald" />
-<meta name="author" content="steven" /><meta property="og:title" content="Cmpress和compress真不一样" />
-<meta property="og:description" content="​ 最近在博主在复现一篇论文​​​​​​​，该论文在处理数据集时用到了一个命令cmpress。当输入这个命令时，终端提醒command not fou" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://stevenazy.github.io/posts/cmpress%E5%92%8Ccompress%E7%9C%9F%E4%B8%8D%E4%B8%80%E6%A0%B7/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-07-12T21:34:45+08:00" />
-<meta property="article:modified_time" content="2023-07-12T21:34:45+08:00" />
+<meta name="author" content="steven" /><meta property="og:url" content="http://localhost:1313/posts/cmpress%E5%92%8Ccompress%E7%9C%9F%E4%B8%8D%E4%B8%80%E6%A0%B7/">
+  <meta property="og:site_name" content="StevenBlog">
+  <meta property="og:title" content="Cmpress和compress真不一样">
+  <meta property="og:description" content="​ 最近在博主在复现一篇论文​​​​​​​，该论文在处理数据集时用到了一个命令cmpress。当输入这个命令时，终端提醒command not found，于是博主Google了一下，找到的词条都是compress，也许是作者写错了README，应该就是compress，博主还自以为是的在Github上给作者提了个issue并沾沾自喜。后续在对代码进行调试时发现，cmpress对数据的操作不应该是压缩，而应该是对数据集进行其他的操作。 经过博主在网上一番冲浪终于找到了cmpress的出处，它来自于一个叫infernal的工具，这个工具主要是用于搜索结构RNA序列同源性的测序数据库，以及实现基于序列或结构的RNA序列比对。infernal包含的命令主要有以下几个cmalign，cmbuild，cmcalibrate，cmconvert，cmemit，cmfetch，cmpress，cmscan，cmsearch，cmstat，具体的用途可以查阅其官方的文档。 既然弄清楚了cmpress怎么来的，接下来就讲一讲如何安装infernal。首先需要到官网去下载最新的infernal压缩包，博主采用的是wget下载。">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-07-12T21:34:45+08:00">
+    <meta property="article:modified_time" content="2023-07-12T21:34:45+08:00">
+    <meta property="article:tag" content="安装教程">
 
 
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Cmpress和compress真不一样"/>
-<meta name="twitter:description" content="​ 最近在博主在复现一篇论文​​​​​​​，该论文在处理数据集时用到了一个命令cmpress。当输入这个命令时，终端提醒command not fou"/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Cmpress和compress真不一样">
+  <meta name="twitter:description" content="​ 最近在博主在复现一篇论文​​​​​​​，该论文在处理数据集时用到了一个命令cmpress。当输入这个命令时，终端提醒command not found，于是博主Google了一下，找到的词条都是compress，也许是作者写错了README，应该就是compress，博主还自以为是的在Github上给作者提了个issue并沾沾自喜。后续在对代码进行调试时发现，cmpress对数据的操作不应该是压缩，而应该是对数据集进行其他的操作。 经过博主在网上一番冲浪终于找到了cmpress的出处，它来自于一个叫infernal的工具，这个工具主要是用于搜索结构RNA序列同源性的测序数据库，以及实现基于序列或结构的RNA序列比对。infernal包含的命令主要有以下几个cmalign，cmbuild，cmcalibrate，cmconvert，cmemit，cmfetch，cmpress，cmscan，cmsearch，cmstat，具体的用途可以查阅其官方的文档。 既然弄清楚了cmpress怎么来的，接下来就讲一讲如何安装infernal。首先需要到官网去下载最新的infernal压缩包，博主采用的是wget下载。">
 
-<meta name="generator" content="Hugo 0.121.2">
+<meta name="generator" content="Hugo 0.154.2">
     
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://stevenazy.github.io/fontawesome/css/all.min.css" />
+  <link rel="stylesheet" href="http://localhost:1313/fontawesome/css/all.min.css" />
   
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
   
@@ -146,7 +151,7 @@
     
       
 <div class="featured_image">
-    <a href="https://stevenazy.github.io/posts/cmpress%E5%92%8Ccompress%E7%9C%9F%E4%B8%8D%E4%B8%80%E6%A0%B7/" title="Cmpress和compress真不一样">
+    <a href="http://localhost:1313/posts/cmpress%E5%92%8Ccompress%E7%9C%9F%E4%B8%8D%E4%B8%80%E6%A0%B7/" title="Cmpress和compress真不一样">
         <img src="">
     </a>
 </div>
@@ -184,12 +189,12 @@ make &amp;&amp; make install
     <ul>
         <li>
         
-            <a href="https://stevenazy.github.io/posts/nvml%E5%88%9D%E5%A7%8B%E5%8C%96%E5%A4%B1%E8%B4%A5/"><i class="fa fa-chevron-circle-left"></i> NVML初始化失败</a>
+            <a href="http://localhost:1313/posts/nvml%E5%88%9D%E5%A7%8B%E5%8C%96%E5%A4%B1%E8%B4%A5/"><i class="fa fa-chevron-circle-left"></i> NVML初始化失败</a>
         
         </li>
         <li>
         
-            <a href="https://stevenazy.github.io/posts/pymol%E5%AE%89%E8%A3%85/">PyMOL安装 <i class="fa fa-chevron-circle-right"></i> </a>
+            <a href="http://localhost:1313/posts/pymol%E5%AE%89%E8%A3%85/">PyMOL安装 <i class="fa fa-chevron-circle-right"></i> </a>
         
         </li>
     </ul>
@@ -209,7 +214,7 @@ make &amp;&amp; make install
             <li>
                 <h6>
                     Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
-                    <a href="https://stevenazy.github.io/index.xml">Subscribe </a></h6>
+                    <a href="http://localhost:1313/index.xml">Subscribe </a></h6>
             </li>
             
             
